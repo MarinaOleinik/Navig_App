@@ -14,7 +14,6 @@
              Text="{Binding Source={x:Reference Name=arv_stepper}, Path=Value }" />
             </StackLayout>
             <Button Text="Salvesta" Clicked="Button_Clicked" />
-            
             <Button Text="Salvesta failisse" Clicked="Salvesta_failisse" />
             <Button Text="Loe failist" Clicked="Loe_failist" />
             <Button Text="Kustuta faili" Clicked="Kustuta_faili" />

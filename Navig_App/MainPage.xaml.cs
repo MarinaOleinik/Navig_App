@@ -20,10 +20,9 @@ namespace Navig_App
             InitializeComponent();
             Maakonnads = new ObservableCollection<Maakond>
             {
-                new Maakond {Nimetus="Harjumaa", Pealinn="Tallinn", Inimeste_arv=52000},
-                new Maakond {Nimetus="Tartumaa", Pealinn="Tartu", Inimeste_arv=30000},
-                new Maakond {Nimetus="Ida-Virumaa", Pealinn="Kohtla-Järve", Inimeste_arv=10000}
-
+                //new Maakond {Nimetus="Harjumaa", Pealinn="Tallinn", Inimeste_arv=52000},
+                //new Maakond {Nimetus="Tartumaa", Pealinn="Tartu", Inimeste_arv=30000},
+                //new Maakond {Nimetus="Ida-Virumaa", Pealinn="Kohtla-Järve", Inimeste_arv=10000}
             };
             list.BindingContext = Maakonnads;
         }
@@ -54,12 +53,10 @@ namespace Navig_App
 
         private void Loe_failist(object sender, EventArgs e)
         {
-           
             filename = "Maakonnad.txt";
             if (String.IsNullOrEmpty(filename)) return;
             if (filename != null)
             {
-                int rows = File.ReadAllLines(Path.Combine(folderPath, filename)).Length;
                 String[] Andmed = File.ReadAllLines(Path.Combine(folderPath, filename));
                 for (int i = 0; i < Andmed.Length; i++)
                 {   

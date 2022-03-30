@@ -14,7 +14,7 @@ namespace Navig_App
     public partial class Maakonnad : ContentPage
     {
         bool edited = true; // флаг редактирования
-        string filename;//
+        string filename;// 
         string folderPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);//
         protected internal ObservableCollection<Maakond> Maakonnads { get; set; }
         public Maakond Maakond { get; set; }
@@ -69,13 +69,11 @@ namespace Navig_App
             if (filename != null)
             {
                 lbl.Text = File.ReadAllText(Path.Combine(folderPath, filename));
-                
             }
         }
         private void Kustuta_faili(object sender, EventArgs e)
         {
             File.Delete(Path.Combine(folderPath, filename));
-            
         }
     }
 }

@@ -26,7 +26,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        
         <Button x:Name="btn" Text="Loe failist" Clicked="Loe_failist" />
     </StackLayout>
 
