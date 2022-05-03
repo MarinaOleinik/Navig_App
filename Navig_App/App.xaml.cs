@@ -8,9 +8,10 @@ namespace Navig_App
     {
         public App()
         {
-            InitializeComponent();
+            //InitializeComponent();
 
-            MainPage =new NavigationPage (new MainPage());
+            MainPage =new NavigationPage (new File_Page());
+            
         }
 
         protected override void OnStart()
