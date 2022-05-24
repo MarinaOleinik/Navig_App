@@ -42,13 +42,11 @@ namespace Navig_App
         }
         protected internal void AddMaakond(Maakond maakond)
         {
-            Maakonnads.Add(maakond);
-           
+            Maakonnads.Add(maakond); 
         }
         protected override void OnAppearing()
         {
-            base.OnAppearing();
-            
+            base.OnAppearing(); 
         }
 
         private void Loe_failist(object sender, EventArgs e)
