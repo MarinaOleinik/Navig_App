@@ -73,6 +73,7 @@ namespace Navig_App
         }
         private void Kustuta_faili(object sender, EventArgs e)
         {
+            filename = "Maakonnad.txt";
             File.Delete(Path.Combine(folderPath, filename));
         }
     }
